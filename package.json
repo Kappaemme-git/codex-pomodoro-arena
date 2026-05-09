@@ -26,6 +26,6 @@
     "type": "git",
     "url": "git+https://github.com/Kappaemme-git/codex-pomodoro-arena.git"
   },
-  "homepage": "https://kappaemme-git.github.io/codex-pomodoro-arena/",
+  "homepage": "https://codex-pomodoro-arena.vercel.app/",
   "license": "MIT"
 }

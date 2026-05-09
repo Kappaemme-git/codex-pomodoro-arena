@@ -10,11 +10,11 @@ Use this skill to open the Codex Pomodoro Arena focus game.
 ## Workflow
 
 1. Run `scripts/open-pomodoro-arena.sh`.
-2. Always reply with the URL: `https://kappaemme-git.github.io/codex-pomodoro-arena/`.
+2. Always reply with the URL: `https://codex-pomodoro-arena.vercel.app/`.
 3. If the browser did not visibly open, tell the user to open that URL manually.
 
 ## Notes
 
-- The game is hosted as a static site at `https://kappaemme-git.github.io/codex-pomodoro-arena/`.
+- The game is hosted as a static site at `https://codex-pomodoro-arena.vercel.app/`.
 - Game interaction starts only after user input.
 - The launcher opens the public website, so users do not need to clone the repo.

@@ -14,4 +14,4 @@ npx --yes codex-pomodoro-arena@latest --install-skill
 
 Public site:
 
-https://kappaemme-git.github.io/codex-pomodoro-arena/
+https://codex-pomodoro-arena.vercel.app/

@@ -5,7 +5,7 @@ const fs = require("fs");
 const os = require("os");
 const path = require("path");
 
-const siteUrl = process.env.CODEX_POMODORO_ARENA_URL || "https://kappaemme-git.github.io/codex-pomodoro-arena/";
+const siteUrl = process.env.CODEX_POMODORO_ARENA_URL || "https://codex-pomodoro-arena.vercel.app/";
 const rootDir = path.resolve(__dirname, "..");
 const skillDir = path.join(os.homedir(), ".codex", "skills", "codex-pomodoro-arena");
 

@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-SITE_URL="${CODEX_POMODORO_ARENA_URL:-https://kappaemme-git.github.io/codex-pomodoro-arena/}"
+SITE_URL="${CODEX_POMODORO_ARENA_URL:-https://codex-pomodoro-arena.vercel.app/}"
 
 if command -v open >/dev/null 2>&1; then
   open -a "Google Chrome" "$SITE_URL" >/dev/null 2>&1 || open "$SITE_URL" >/dev/null 2>&1 || true
