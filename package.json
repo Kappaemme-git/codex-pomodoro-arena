@@ -1,0 +1,31 @@
+{
+  "name": "codex-pomodoro-arena",
+  "version": "0.1.0",
+  "description": "Open a Codex-themed Pomodoro boss-fight focus game in your browser.",
+  "private": false,
+  "bin": {
+    "codex-pomodoro-arena": "scripts/codex-pomodoro-arena.js"
+  },
+  "scripts": {
+    "start": "node scripts/codex-pomodoro-arena.js",
+    "pack:dry": "npm pack --dry-run"
+  },
+  "files": [
+    "SKILL.md",
+    "agents",
+    "index.html",
+    "styles.css",
+    "script.js",
+    "favicon.svg",
+    "assets",
+    "scripts/codex-pomodoro-arena.js",
+    "scripts/open-pomodoro-arena.sh"
+  ],
+  "keywords": ["codex", "pomodoro", "focus", "game", "pixel-art"],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kappaemme-git/codex-pomodoro-arena.git"
+  },
+  "homepage": "https://kappaemme-git.github.io/codex-pomodoro-arena/",
+  "license": "MIT"
+}

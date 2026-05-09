@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Codex Pomodoro Arena</title>
+    <meta
+      name="description"
+      content="A Codex skill that turns focus sessions into a pixel-art boss fight."
+    />
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="shell" aria-labelledby="title">
+      <section class="arena-card">
+        <header class="topbar">
+          <div class="brand-lockup">
+            <img class="title-art" src="./assets/pomodoro-arena-title.png" alt="Pomodoro Arena" />
+            <h1 id="title">Pomodoro Arena</h1>
+          </div>
+        </header>
+
+        <section class="hud" aria-label="Focus session controls">
+          <div class="timer-panel">
+            <small>Focus core</small>
+            <span id="timer">25:00</span>
+            <em id="timerCaption">25m boss fight</em>
+          </div>
+
+          <label class="quest-panel" for="questInput">
+            <span>Quest contract</span>
+            <input id="questInput" type="text" maxlength="52" placeholder="Write the task you must finish..." />
+            <small id="questHint">Write your focus task here</small>
+          </label>
+
+          <div class="boss-panel">
+            <div class="boss-copy boss-head">
+              <span>Boss target</span>
+              <strong>Claude</strong>
+              <b id="hpReadout">100%</b>
+            </div>
+            <div class="hp-track" aria-label="Boss hit points">
+              <i id="bossHp"></i>
+              <mark></mark>
+            </div>
+          </div>
+
+          <div class="controls">
+            <button id="startButton" type="button">Start</button>
+            <button id="pauseButton" type="button">Pause</button>
+            <button id="resetButton" type="button">Reset</button>
+          </div>
+        </section>
+
+        <section class="stage-wrap">
+          <canvas id="arena" width="960" height="540" aria-label="Pixel-art pomodoro arena"></canvas>
+          <div class="focus-check" id="focusCheck" role="dialog" aria-labelledby="focusCheckTitle" aria-modal="false">
+            <p id="focusCheckTitle">Still building?</p>
+            <span id="focusCheckQuest">Stay on the quest.</span>
+            <button id="focusCheckButton" type="button">Yes, focus strike</button>
+          </div>
+          <div class="toast" id="toast">Press Start to enter the arena</div>
+        </section>
+
+        <footer class="bottom-bar">
+          <span>Focus streak: <b id="streak">0</b></span>
+          <span>Quest: <b id="questLabel">unset</b></span>
+          <span>Phase: <b id="phaseLabel">ready</b></span>
+          <span>Pause stops damage</span>
+        </footer>
+      </section>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
